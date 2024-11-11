@@ -1,0 +1,59 @@
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Dependency directories
+jspm_packages/
+.vscode/
+
+# Build outputs
+dist/
+build/
+coverage/
+*.tsbuildinfo
+
+# Environment variables
+.env
+
+# Temp files
+tmp/
+temp/
+
+# Uploaded files
+uploads/
+
+# TypeScript cache
+*.tscache
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Testing files
+coverage/
+nyc_output/
+jest/
+
+# IDEs
+.idea/
+.vscode/
+
+# npm/yarn/pnpm logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Ignore output from Thunder Client
+thunder-tests/
+
+# Optional lock files (uncomment if using lock files)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml

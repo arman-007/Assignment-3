@@ -1,0 +1,86 @@
+[
+  {
+    "id": "1",
+    "slug": "sunset-villa",
+    "images": [],
+    "title": "Sunset Villa",
+    "description": "A beautiful villa with an ocean view.",
+    "guest_count": 4,
+    "bedroom_count": 2,
+    "bathroom_count": 2,
+    "amenities": [
+      "Pool",
+      "WiFi",
+      "Air Conditioning"
+    ],
+    "host_info": "John Doe",
+    "address": "123 Ocean Ave, Beach City",
+    "latitude": 36.7783,
+    "longitude": -119.4179,
+    "rooms": [
+      {
+        "hotel_slug": "sunset-villa",
+        "room_slug": "suite-room",
+        "room_image": [],
+        "room_title": "Suite Room",
+        "bedroom_count": 1
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "slug": "mountain-resort",
+    "images": [],
+    "title": "Mountain Resort",
+    "description": "A cozy resort in the mountains.",
+    "guest_count": 6,
+    "bedroom_count": 3,
+    "bathroom_count": 2,
+    "amenities": [
+      "Heating",
+      "Fireplace",
+      "WiFi"
+    ],
+    "host_info": "Jane Smith",
+    "address": "456 Mountain Rd, Hill Town",
+    "latitude": 35.6895,
+    "longitude": -105.9378,
+    "rooms": [
+      {
+        "hotel_slug": "mountain-resort",
+        "room_slug": "deluxe-room",
+        "room_image": [],
+        "room_title": "Deluxe Room",
+        "bedroom_count": 2
+      }
+    ]
+  },
+  {
+    "id": "1731321664816",
+    "slug": "sunset-villa-2",
+    "images": [],
+    "title": "Sunset Villa 2",
+    "description": "A beautiful villa with an ocean view.",
+    "guest_count": 4,
+    "bedroom_count": 2,
+    "bathroom_count": 2,
+    "amenities": [
+      "Pool",
+      "WiFi",
+      "Air Conditioning"
+    ],
+    "host_info": "John Doe",
+    "address": "123 Ocean Ave, Beach City",
+    "latitude": 36.7783,
+    "longitude": -119.4179,
+    "rooms": [
+      {
+        "hotel_slug": "sunset-villa",
+        "room_slug": "suite-room",
+        "room_image": [],
+        "room_title": "Suite Room",
+        "bedroom_count": 1
+      }
+    ]
+  }
+]
