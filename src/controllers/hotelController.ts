@@ -62,7 +62,7 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage });
 
-export const hotelController = {
+const hotelController = {
   getAllHotelIdsAndTitles: (req: Request, res: Response): void => {
     try {
       // Read all files in the hotel directory

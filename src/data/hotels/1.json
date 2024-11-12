@@ -1,0 +1,12 @@
+{
+    "id": "1",
+    "title": "Hotel One",
+    "description": "A test hotel",
+    "guestCount": 2,
+    "bedroomCount": 1,
+    "bathroomCount": 1,
+    "amenities": ["WiFi", "Pool"],
+    "address": "123 Test St",
+    "latitude": 40.7128,
+    "longitude": -74.006
+  }

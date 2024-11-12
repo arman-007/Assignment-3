@@ -5,7 +5,7 @@ import app from "../src/index"; // Assuming `app` is the Express app in your mai
 import fs from "fs";
 import path from "path";
 
-import { readHotelData } from "../src/controllers/hotelController"
+import {hotelController, readHotelData} from "../src/controllers/hotelController"
 // Mock dependencies
 jest.mock("fs");
 
@@ -67,6 +67,9 @@ describe("GET /hotel - getAllHotelIdsAndTitles", () => {
 });
 
 // GET /hotel/{hotel-id}
+jest.mock('../src/controllers/hotelController', () => ({
+  readHotelData: jest.fn(),
+}));
 describe("GET /hotel/:hotelId - getHotelById", () => {
   const hotelsDataDir = "./src/data/hotels"; // Adjust path if necessary
 
@@ -90,10 +93,24 @@ describe("GET /hotel/:hotelId - getHotelById", () => {
     };
 
     // Mock readHotelData to return hotel data for the given ID
-    (readHotelData as jest.Mock).mockReturnValue(mockHotelData);
+    (hotelController.getAllHotelIdsAndTitles as jest.Mock).mockImplementation(() => Promise.resolve(mockHotelData));
 
-    // Send GET request to /hotel/:hotelId
+    // Send GET request
     const response = await request(app).get(`/hotel/${mockHotelId}`);
+
+    // Expected response data
+    const expectedData = {
+      id: "1",
+      title: "Hotel One",
+      description: "A test hotel",
+      guestCount: 2,
+      bedroomCount: 1,
+      bathroomCount: 1,
+      amenities: ["WiFi", "Pool"],
+      address: "123 Test St",
+      latitude: 40.7128,
+      longitude: -74.006,
+    };
 
     // Assertions
     expect(response.status).toBe(200);
