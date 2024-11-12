@@ -32,7 +32,7 @@ interface Room {
   bedroom_count: number;
 }
 
-function readHotelData(hotelId: string): Hotel | null {
+export function readHotelData(hotelId: string): Hotel | null {
   const filePath = path.join(hotelsDataDir, `${hotelId}.json`);
   if (!fs.existsSync(filePath)) return null;
   const hotelData = fs.readFileSync(filePath, "utf-8");
