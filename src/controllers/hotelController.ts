@@ -32,7 +32,7 @@ interface Room {
   bedroom_count: number;
 }
 
-function readHotelData(hotelId: string): Hotel | null {
+export function readHotelData(hotelId: string): Hotel | null {
   const filePath = path.join(hotelsDataDir, `${hotelId}.json`);
   if (!fs.existsSync(filePath)) return null;
   const hotelData = fs.readFileSync(filePath, "utf-8");
@@ -62,7 +62,7 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage });
 
-export const hotelController = {
+const hotelController = {
   getAllHotelIdsAndTitles: (req: Request, res: Response): void => {
     try {
       // Read all files in the hotel directory
