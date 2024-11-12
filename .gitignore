@@ -54,6 +54,6 @@ pnpm-debug.log*
 thunder-tests/
 
 # Optional lock files (uncomment if using lock files)
-# package-lock.json
+package-lock.json
 # yarn.lock
 # pnpm-lock.yaml
