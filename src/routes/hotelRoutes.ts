@@ -1,16 +1,17 @@
-import express, { Request, Response } from 'express';
-import hotelController from '../controllers/hotelController';
+import express, { Request, Response, Router } from 'express';
+import {hotelController} from '../controllers/hotelController';
 // import multer from 'multer';
 
-const router = express.Router();
+const router: Router = express.Router();
 // const upload = multer({ dest: 'src/images/' });
 
-router.get('/', (req: Request, res: Response) => {
-    res.send('Hello, World!')
-});
-router.post('/hotel/', hotelController.addHotel);
-// router.post('/hotel/images', upload.array('images'), (req: Request, res: Response) => hotelController.uploadImages(req, res));
-// router.get('/hotel/:hotelId', (req: Request, res: Response) => hotelController.getHotelById(req, res));
-// router.put('/hotel/:hotelId', (req: Request, res: Response) => hotelController.updateHotel(req, res));
+// router.get('/', (req: Request, res: Response) => {res.send('Hello, World!')});
+
+router.get('/hotel', hotelController.getAllHotelIdsAndTitles);
+router.post('/hotel', hotelController.addHotel);
+router.post('/hotel/images', hotelController.uploadImages);
+router.get('/hotel/:hotelId', hotelController.getHotelById);
+router.put('/hotel/:hotelId', hotelController.updateHotel);
+router.delete('/hotel/:hotelId', hotelController.deleteHotelById);
 
 export default router;
