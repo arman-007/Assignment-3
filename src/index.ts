@@ -3,7 +3,7 @@ import helmet from "helmet"
 import express, {Request, Response} from 'express';
 import hotelRoutes from './routes/hotelRoutes';
 
-const app = express();
+export const app = express();
 const PORT = 3000; 
 
 app.use(express.json());
@@ -21,4 +21,4 @@ app.get('/', (req: Request, res: Response) => {
 //   console.log(`Server running at http://localhost:${PORT}`);
 // });
 
-export default app;
+// export default app;

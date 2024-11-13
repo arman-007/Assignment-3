@@ -1,12 +1,28 @@
 {
     "id": "1",
-    "title": "Hotel One",
-    "description": "A test hotel",
-    "guestCount": 2,
-    "bedroomCount": 1,
-    "bathroomCount": 1,
-    "amenities": ["WiFi", "Pool"],
-    "address": "123 Test St",
-    "latitude": 40.7128,
-    "longitude": -74.006
+    "slug": "sunset-villa-12",
+    "images": [],
+    "title": "Sunset Villa 12",
+    "description": "A beautiful villa with an ocean view.",
+    "guest_count": 4,
+    "bedroom_count": 2,
+    "bathroom_count": 2,
+    "amenities": [
+      "Pool",
+      "WiFi",
+      "Air Conditioning"
+    ],
+    "host_info": "John Doe",
+    "address": "123 Ocean Ave, Beach City",
+    "latitude": 36.7783,
+    "longitude": -119.4179,
+    "rooms": [
+      {
+        "hotel_slug": "sunset-villa",
+        "room_slug": "suite-room",
+        "room_image": [],
+        "room_title": "Suite Room",
+        "bedroom_count": 1
+      }
+    ]
   }
