@@ -1,7 +1,9 @@
 {
   "id": "1731386715312",
   "slug": "sunset-villa-12",
-  "images": [],
+  "images": [
+    "/uploads/images/image-1731486698296-249632718.webp"
+  ],
   "title": "Sunset Villa 12",
   "description": "A beautiful villa with an ocean view.",
   "guestCount": 4,
